@@ -1,0 +1,34 @@
+{
+  "name": "loremflickr-node",
+  "version": "1.0.0",
+  "description": "A website that provides placeholder images for every case, web or print, on almost any subject, in any size.",
+  "author": {
+    "name": "Kodie Grantham",
+    "email": "kodie.grantham@gmail.com",
+    "url": "http://kodieg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodie/loremflickr-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kodie/loremflickr-node/issues"
+  },
+  "homepage": "https://github.com/kodie/loremflickr-node",
+  "main": "server.js",
+  "scripts": {
+    "watch": "nodemon --ignore cache/",
+    "start": "node server"
+  },
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.x",
+    "fs": "0.x",
+    "hogan-express": "0.5.x",
+    "rnd-flickr": "1.1.x"
+  },
+  "devDependencies": {
+    "nodemon": "1.x"
+  }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<head>
+  <title>{{title}}</title>
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <style type="text/css">
+    .jumbotron { padding-top: 100px; }
+    .navbar-inverse {
+      background: #2780e3;
+      border-color: #1967be;
+    }
+    .navbar-inverse .navbar-brand { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <a href="https://github.com/kodie/loremflickr-node"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 10000;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">{{title}}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-7">
+          <p>{{title}} provides <strong>placeholder images</strong> for every case, web or print, on almost <strong>any subject</strong>, in <strong>any size</strong>. It's simple and <strong>free</strong>. Just put the custom url in your code like so:</p>
+
+          <pre><code class="html">&lt;img src="{{url}}/320/240" /&gt;</code></pre>
+
+          <p>Photos come from <a href="http://flickr.com">Flickr</a> and have a <a href="http://creativecommons.org/">Creative Commons</a> license. The flavour of the license is shown in the top left of the image. The name of the image and the author are shown in the bottom left.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-5">
+          <img src="/320/640" class="thumbnail img-responsive visible-sm" />
+          <img src="/640/480" class="thumbnail img-responsive hidden-xs hidden-sm hidden-lg" />
+          <img src="/640/320" class="thumbnail img-responsive visible-xs visible-lg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-7">
+        <h2>Examples</h2>
+        <pre><code class="html"><a href="{{url}}/320/240" target="_blank">{{url}}/320/240</a></code></pre>
+        <p>A random picture of <strong>320 x 240 pixels</strong>. If not supplying any keyword, you'll get a picture matching the keyword <strong>puppy</strong>.</p>
+
+        <pre><code class="html"><a href="{{url}}/320/240/cat" target="_blank">{{url}}/320/240/cat</a></code></pre>
+        <p>A random picture matching the keyword <strong>cat</strong>, of 320 x 240 pixels.</p>
+
+        <pre><code class="html"><a href="{{url}}/320/240/brazil,rio" target="_blank">{{url}}/320/240/brazil,rio</a></code></pre>
+        <p>A random picture matching the keywords brazil <strong>or</strong> rio, of 320 x 240 pixels.</p>
+
+        <pre><code class="html"><a href="{{url}}/320/240/paris,girl/all" target="_blank">{{url}}/320/240/paris,girl/all</a></code></pre>
+        <p>A random picture matching the keywords paris <strong>and</strong> girl, of 320 x 240 pixels.</p>
+
+        <p>If no matching photos are found, <a href="{{url}}/default.jpeg" target="_blank">a photo of this dog</a> is returned.</p>
+      </div>
+
+      <div class="col-sm-12 col-md-5">
+        <h2>Multiple images on the same page</h2>
+          <p>Your browser might cache the images when you request the same URL multiple times on the same page. You can resolve this by adding a meaningless querystring to the URL. So, for example...</p>
+          <pre><code class="html">&lt;img src="{{url}}/320/240?random=1" /&gt;
+&lt;img src="{{url}}/320/240?random=2" /&gt;
+&lt;img src="{{url}}/320/240?random=3" /&gt;</code></pre>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p class="pull-right">{{title}} was built by <a href="http://kodieg.com" target="_blank">Kodie Grantham</a> using the <a href="http://github.com/kodie/rnd-flickr" target="_blank">rnd-flickr</a> node module | Inspired by <a href="http://loremflickr.com" target="_blank">LoremFlickr.com</a> by <a href="http://babakfakhamzadeh.com" target="_blank">Babak Fakhamzadeh</a></p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
