@@ -10,10 +10,10 @@ A website that provides placeholder images for every case, web or print, on almo
 1. `npm start`
 
 ## To-Do
-1. Look into scalability.
-1. Add license, author, and image name to images.
-1. Add various filter options (grayscale, pixelated, red, blue, green).
-1. Possibly add daily image RSS feed.
+* Look into scalability.
+* Add license, author, and image name to images.
+* Add various filter options (grayscale, pixelated, red, blue, green).
+* Possibly add daily image RSS feed.
 
 ## License
 MIT. See the License file for more info.
