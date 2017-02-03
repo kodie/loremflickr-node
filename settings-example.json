@@ -1,18 +1,14 @@
 {
-  "public": {
-    "title": "LoremFlickr-node",
-    "url": "http://localhost:3000"
-  },
-  "private": {
-    "flickr_api_key": "",
-    "cache_path": "cache",
-    "cache_expire": 3600000,
-    "max_width": 1280,
-    "max_height": 800,
-    "default_width": 320,
-    "default_height": 240,
-    "default_tags": "puppy",
-    "default_tag_mode": "any",
-    "default_image": "client/default.jpeg"
-  }
+  "title": "LoremFlickr-node",
+  "url": "http://localhost:3000",
+  "flickr_api_key": "",
+  "cache_path": "cache",
+  "cache_expire": 3600000,
+  "max_width": 1280,
+  "max_height": 800,
+  "default_width": 320,
+  "default_height": 240,
+  "default_tags": "puppy",
+  "default_tag_mode": "any",
+  "default_image": "client/default.jpeg"
 }
