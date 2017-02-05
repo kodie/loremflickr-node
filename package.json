@@ -24,7 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "4.x",
-    "fs": "0.x",
+    "fs": "0.0.1-security",
     "hogan-express": "0.5.x",
     "rnd-flickr": "1.1.x"
   },
