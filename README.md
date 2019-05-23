@@ -9,6 +9,10 @@ A website that provides placeholder images for every case, web or print, on almo
 1. Edit `settings.json` to your liking (You'll also need to set your Flickr api key in there)
 1. `npm start`
 
+## Installation with Docker
+1. Clone repository
+1. `docker build -t loremflickr-node . &&  docker run -p 3000:3000 loremflickr-node`
+
 ## Settings
 Settings can be set either by the `settings.json` file or by environmental variables (or both!). When using environmental variables you will need to use the `loremflickr_` prefix. For example: `export loremflickr_cache_expire=3600000`. Environmental variables take priority over `settings.json`.
 
